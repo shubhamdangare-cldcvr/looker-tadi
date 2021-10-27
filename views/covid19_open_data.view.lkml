@@ -47,6 +47,11 @@ view: covid19_open_data {
     sql: ${TABLE}.deaths ;;
   }
 
+  measure: deaths_people {
+    type: sum
+    sql: ${TABLE}.deaths ;;
+  }
+
   dimension: fips {
     type: string
     sql: ${TABLE}.fips ;;
