@@ -10,4 +10,8 @@ datagroup: covid_data_default_datagroup {
 
 persist_with: covid_data_default_datagroup
 
-explore: covid19_open_data {}
+explore: covid19_open_data {
+}
+
+explore: stackoverflow_posts {
+}
