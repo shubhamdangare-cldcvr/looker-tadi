@@ -1,5 +1,5 @@
 view: store_web_sales_return_vw {
-  sql_table_name: `cc-data-sandbox.gcp.store_web_sales_return_vw`
+  sql_table_name: `cc-data-sandbox.looker_test.store_web_sales_return_vw`
     ;;
 
   dimension: account_credit {
