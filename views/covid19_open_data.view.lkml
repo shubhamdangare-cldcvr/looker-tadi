@@ -2,7 +2,7 @@ view: covid19_open_data {
   sql_table_name: `looker_test.covid19_open_data`
     ;;
 
-  dimension: active {
+  measure: active {
     type: number
     sql: ${TABLE}.active ;;
   }
