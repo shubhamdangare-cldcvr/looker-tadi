@@ -1,5 +1,5 @@
-view: store_web_sales_return_vw {
-  sql_table_name: `cc-data-sandbox.looker_test.store_web_sales_return_vw`
+view: store_web_sales_return {
+  sql_table_name: `cc-data-sandbox.looker_test.store_web_sales_return`
     ;;
 
   dimension: account_credit {
@@ -124,8 +124,8 @@ view: store_web_sales_return_vw {
     sql: ${TABLE}.return_amt ;;
   }
 
-  dimension: return_qty {
-    type: number
+  measure: return_qty {
+    type: sum
     sql: ${TABLE}.return_qty ;;
   }
 
@@ -134,8 +134,8 @@ view: store_web_sales_return_vw {
     sql: ${TABLE}.reversed_charge ;;
   }
 
-  dimension: sale_qty {
-    type: number
+  measure: sale_qty {
+    type: sum
     sql: ${TABLE}.sale_qty ;;
   }
 
@@ -194,7 +194,7 @@ view: store_web_sales_return_vw {
     sql: ${TABLE}.zip ;;
   }
 
-  measure: count {
+  measure: cust_count {
     type: count
     drill_fields: [cust_name]
   }

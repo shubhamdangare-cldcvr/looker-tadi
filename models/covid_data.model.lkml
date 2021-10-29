@@ -15,3 +15,7 @@ explore: covid19_open_data {
 
 explore: stackoverflow_posts {
 }
+
+explore: store_web_sales_return  {
+
+}
